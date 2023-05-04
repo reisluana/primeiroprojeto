@@ -1,23 +1,39 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Alô Mundo!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
-    }
-}
-
-class FirstClass{
+public class Main{
     public static void main(String[] args){
-        System.out.printf("Concluí a aula 01 e agora estou mergulhando em Java!");
+        System.out.println("Esse é o Screen Match");
+        System.out.println("Filme: Top Gun - Maverick");
+
+        int anoDeLancamento = 2022;
+        System.out.println("Ano de Lançamento: " + anoDeLancamento);
+        boolean inlcluidoNoPlano = true;
+        double notaDoFilme = 8.1;
+
+        String sinopse;
+        sinopse = "Filme de aventura com galã dos anos 80";
+        System.out.println(sinopse);
+
+        String comentario;
+        comentario = """
+                Filme Top!!!
+                Muito bom
+                Recomendo
+                """;
+        System.out.println(comentario);
+
+        double avaliador1 = 9.8;
+        double avaliador2 = 8.8;
+        double avaliador3 = 8.5;
+
+        double media = (avaliador1 + avaliador2 + avaliador3) / 3;
+        System.out.println("A nota média do filme segundo a crítica especializada é " + media);
+
+        if (media >= 7){
+            System.out.println("O filme está classificado");
+        } else {
+            System.out.println("O filme está desclassificado");
+        }
     }
 }
