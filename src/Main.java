@@ -8,7 +8,7 @@ public class Main{
 
         int anoDeLancamento = 2022;
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
-        boolean inlcluidoNoPlano = true;
+        boolean incluidoNoPlano = true;
         double notaDoFilme = 8.1;
 
         /*tipos primitivos em java: boolean, byte, char, short, int, long, float, double
