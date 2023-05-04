@@ -72,6 +72,13 @@ public class Main{
         /*O casting explícito é realizado quando o tipo de dado de origem é incompatível com o tipo de
         dado de destino. Nesse caso, devemos utilizar o operador de casting para realizar a conversão
          */
+        int temperaturaCelsius = 34;
+        double conversorFahrenheit = (temperaturaCelsius * 1.8) + 32;
+        System.out.println(conversorFahrenheit);
+        int temperaturaFahrenheit = (int) conversorFahrenheit;
+        //System.out.println("A temperatura em Fahrenheit é " + temperaturaFahrenheit);
+        System.out.println(String.format("A temperatura em Celsius é %d e em Fahrenheit é %d ",
+                temperaturaCelsius, temperaturaFahrenheit));
 
 
         //comparando strings: método equals()
@@ -87,6 +94,7 @@ public class Main{
         int idade = 30;
         double valor = 55.9999;
         System.out.println(String.format("Meu nome é %s, eu tenho %d anos e hoje gastei %.2f reais", nome, idade, valor));
+        /* o %.2f indica que quero apenas duas casas decimais. nesse caso o número é arredondado para 56 */
 
         String nomeCompleto = "João Veiga";
         int aulas = 4;
