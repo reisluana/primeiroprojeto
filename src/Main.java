@@ -11,10 +11,29 @@ public class Main{
         boolean inlcluidoNoPlano = true;
         double notaDoFilme = 8.1;
 
+        /*tipos primitivos em java: boolean, byte, char, short, int, long, float, double
+
+        * operadores de incremento: há dois tipos -> ++variavel and variavel++
+         O operador de pré-incremento (++variavel) aumenta o valor da variável
+         em 1 antes de usar a variável em uma expressão. Aqui está um exemplo:*/
+        int num = 5;
+        int resultado = ++num; //num é incrementado para 6 e depois atribuído a resultado
+        System.out.println(num); // imprime 6
+        System.out.println(resultado); // imprime 6
+        /*Já o operador de pós-incremento (variavel++) aumenta o valor da variável em 1 depois de
+        usar a variável em uma expressão. Aqui está um exemplo:*/
+        int num2 = 5;
+        int resultado2 = num2++; //num é atribuído primeiramente à variável resultado e depois incrementado para 6
+        System.out.println(num2); // imprime 6
+        System.out.println(resultado2); // imprime 5
+
+
+
         String sinopse;
         sinopse = "Filme de aventura com galã dos anos 80";
         System.out.println(sinopse);
 
+        //o nome disso é Text Block:
         String comentario;
         comentario = """
                 Filme Top!!!
@@ -35,5 +54,50 @@ public class Main{
         } else {
             System.out.println("O filme está desclassificado");
         }
+
+        //o nome disso é CASTING: converter tipos de dados
+        //peguei um valor double (media) e converti para inteiro
+        int classificacao = (int) (media / 2);
+        System.out.println(classificacao);
+        /*Essa conversão pode ser feita de forma automática pelo compilador (conversão implícita),
+        quando o tipo de dado de destino é compatível com o tipo de dado de origem, ou de forma manual
+        (conversão explícita), utilizando o operador de casting.
+
+         CASTING IMPLÍCITO:*/
+        int x = 10;
+        double y = x; // casting implícito
+        //CASTING EXPLÍCITO:
+        double xou = 10.5;
+        int yas = (int) xou; // casting explícito
+        /*O casting explícito é realizado quando o tipo de dado de origem é incompatível com o tipo de
+        dado de destino. Nesse caso, devemos utilizar o operador de casting para realizar a conversão
+         */
+
+
+        //comparando strings: método equals()
+        String senha = "12345";
+        if (senha.equals("12345")) {
+            System.out.println("Acesso autorizado!");
+        } else {
+            System.out.println("Senha incorreta.");
+        }
+
+        //essa é a template string do java: há dois formatos, o .format e o .formatted (que pode ser usado em text block)
+        String nome = "Maria";
+        int idade = 30;
+        double valor = 55.9999;
+        System.out.println(String.format("Meu nome é %s, eu tenho %d anos e hoje gastei %.2f reais", nome, idade, valor));
+
+        String nomeCompleto = "João Veiga";
+        int aulas = 4;
+        //a segunda maneira é essa:
+        String mensagem = """
+                  Olá, %s!
+                  Boas vindas ao curso de Java.
+                  Teremos %d aulas para te mostrar o que é preciso para você dar o seu primeiro mergulho na linguagem!
+                  """.formatted(nomeCompleto, aulas);
+        System.out.println(mensagem);
+
+
     }
 }
