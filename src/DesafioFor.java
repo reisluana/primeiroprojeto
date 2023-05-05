@@ -32,5 +32,7 @@ public class DesafioFor {
 
     }
 }
-//esse código funciona e está limitado a 5 tentativas, mas não consegui incluir o break (esse era um dos requisitos
-//do enunciado do exercício
+/*esse código funciona e está limitado a 5 tentativas, mas não consegui incluir o break (esse era um dos requisitos
+do enunciado do exercício. segundo o chatGPT eu poderia colocar o break no if else mesmo, mas na condição de "Parabéns
+Você acertou" pq aí eu encerraria o loop e o programa não iria ler os outros else if, então eu poderia colocar essa
+condicional logo no primeiro if*/
