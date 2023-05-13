@@ -1,6 +1,5 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-
 public class Main{
     /*todo código em java precisa estar dentro de classes
     *  Os packages são um agrupamento lógico de classes relacionadas*/
@@ -8,12 +7,34 @@ public class Main{
         System.out.println("Esse é o Screen Match");
         System.out.println("Filme: Top Gun - Maverick");
 
+        //declarando variável: <tipo> <nome> = <valor inicial> (opcional)
+        //exemplo: int idade = 25;
+        //printf = formatação. no exemplo abaixo, quero formatar com DUAS casas decimais
+        double b = 10.35784;
+        System.out.printf("%.2f", b);
+        //o printf também funciona na concatenação. exemplo:
+        System.out.printf("O resultado é %.2f metros%n", b); //o %n no final indica quebra de linha
+        //o println tem quebra de linha, o printf não
+
+        //para alterar o idioma da minha aplicação, é necessário usar Locale
+        //exemplo: Locale.setDefault(Locale.US) -> nesse caso, o programa vai imprimir números decimais com ponto (US),
+        //e nao vírgula (BR)
+
         int anoDeLancamento = 2022;
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
         boolean incluidoNoPlano = true;
         double notaDoFilme = 8.1;
 
         /*tipos primitivos em java: boolean, byte, char, short, int, long, float, double
+        o valor do char precisa ser colocado entre aspas simples
+
+        é uma boa prática indicar o tipo do número.
+        exemplo: para double, adicionar .0 (mesmo sendo inteiro); para float, adicionar o f.
+        double h;
+        h = 6.0;
+
+        float c;
+        c = 8f;
 
         * operadores de incremento: há dois tipos -> ++variavel and variavel++
          O operador de pré-incremento (++variavel) aumenta o valor da variável
