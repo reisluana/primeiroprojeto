@@ -2,6 +2,8 @@
 // then press Enter. You can now see whitespace characters in your code.
 
 public class Main{
+    /*todo código em java precisa estar dentro de classes
+    *  Os packages são um agrupamento lógico de classes relacionadas*/
     public static void main(String[] args){
         System.out.println("Esse é o Screen Match");
         System.out.println("Filme: Top Gun - Maverick");
