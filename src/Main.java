@@ -18,7 +18,7 @@ public class Main{
 
         //para alterar o idioma da minha aplicação, é necessário usar Locale
         //exemplo: Locale.setDefault(Locale.US) -> nesse caso, o programa vai imprimir números decimais com ponto (US),
-        //e nao vírgula (BR)
+        //e nao vírgula (BR). a declaração do Locale precisa ser feita ANTES do Scanner
 
         int anoDeLancamento = 2022;
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
