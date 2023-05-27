@@ -12,7 +12,7 @@ public class Exercicios {
         int soma = valor1 + valor2;
         System.out.println("SOMA = " + soma);
         leitura.close();
-
+        
         /*Scanner sc = new Scanner(System.in);
 
         int A, B, soma;
