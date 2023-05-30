@@ -30,17 +30,28 @@ public class Program {
         y.a = sc.nextDouble(); //aqui estamos acessando os atributos do triangulo y
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
+
+        /*
+        esse trecho foi retirado, pois o correto não seria fazer a lógica aqui, mas sim na classe triangulo.
+        sendo assim, fazemos a lógica lá e chamamos o método aqui.
+
         double p = (x.a + x.b + x.c) / 2.0;
         double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
         p = (y.a + y.b + y.c) / 2.0;
         double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        */
+
+        double areaX = x.area(); //estamos chamando o método do arquivo triangulo
+        double areaY = y.area();
+
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n", areaY);
         if (areaX > areaY) {
             System.out.println("Larger area: X");
-        }
-        else {
+        } else {
             System.out.println("Larger area: Y");
         }
+
         sc.close();
+    }
 }
